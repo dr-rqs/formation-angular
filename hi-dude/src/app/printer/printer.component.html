@@ -1,3 +1,8 @@
 <span>My printer : {{ printerName }}</span>
 <span>Is my printer ON : {{ isPrinterOn }}</span>
 <button (click)="onTurnOnOffPrinter()">Turn ON / OFF</button>
+
+<div>
+  <span>Change the printer name :</span>
+  <input type="text" [(ngModel)]="printerName">
+</div>

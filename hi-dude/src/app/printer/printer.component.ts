@@ -15,4 +15,8 @@ export class PrinterComponent implements OnInit {
   ngOnInit() {
   }
 
+  onTurnOnOffPrinter() {
+    this.isPrinterOn = !this.isPrinterOn;
+  }
+
 }

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PrinterComponent implements OnInit {
 
   printerName =  'Best printer';
+  isPrinterOn = true;
 
   constructor() { }
 

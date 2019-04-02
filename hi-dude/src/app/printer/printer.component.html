@@ -7,4 +7,4 @@
   <input type="text" [(ngModel)]="printerName">
 </div>
 
-<app-technical-card [voltage]="voltage"></app-technical-card>
+<app-technical-card [voltage]="voltage" (switchFC)="onTurnOnOffPrinter()"></app-technical-card>

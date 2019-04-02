@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-technical-card',
@@ -8,10 +8,15 @@ import {Component, Input, OnInit} from '@angular/core';
 export class TechnicalCardComponent implements OnInit {
 
   @Input() voltage: string;
+  @Output() switchFC = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSwitchFromChild() {
+    this.switchFC.emit();
   }
 
 }

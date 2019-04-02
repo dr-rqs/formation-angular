@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SpeakerComponent } from './speaker/speaker.component';
 import { PrinterComponent } from './printer/printer.component';
 import {FormsModule} from "@angular/forms";
+import { TechnicalCardComponent } from './technical-card/technical-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpeakerComponent,
-    PrinterComponent
+    PrinterComponent,
+    TechnicalCardComponent
   ],
   imports: [
     BrowserModule,

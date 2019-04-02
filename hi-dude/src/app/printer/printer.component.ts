@@ -9,6 +9,7 @@ export class PrinterComponent implements OnInit {
 
   printerName =  'Best printer';
   isPrinterOn = true;
+  voltage = '230V';
 
   constructor() { }
 

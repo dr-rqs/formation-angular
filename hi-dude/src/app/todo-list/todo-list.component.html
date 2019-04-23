@@ -1,0 +1,16 @@
+<div class="todo-list-container">
+  <h1 class="title">TODO LIST</h1>
+  <div class="tasks-container">
+    <div class="add-task">
+      <input type="text" [(ngModel)]="newTaskTitle">
+      <button (click)="addTask()" [disabled]="!newTaskTitle">Add Task</button>
+    </div>
+
+    <ul>
+      <li *ngFor="let task of tasks">
+        <app-task [task]="task" (deleteTask)="removeTask($event)"></app-task>
+      </li>
+    </ul>
+  </div>
+
+</div>

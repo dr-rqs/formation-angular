@@ -1,0 +1,15 @@
+<article class="task-content" [ngClass]="{ 'done' : task.isDone }">
+  <div class="task-title">
+    <span *ngIf="!isEditionMode; else editionMode">
+      {{ task.title }}
+    </span>
+    <ng-template #editionMode>
+      <input type="text" [(ngModel)]="task.title">
+    </ng-template>
+  </div>
+  <div class="actions">
+    <button (click)="onDone()" [disabled]="task.isDone">DONE</button>
+    <fa name="trash" (click)="onDelete()" size="2x"></fa>
+    <fa name="{{ isEditionMode ? 'check' : 'edit' }}" (click)="onEdit()" size="2x"></fa>
+  </div>
+</article>

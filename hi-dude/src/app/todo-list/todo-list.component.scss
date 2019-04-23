@@ -1,0 +1,55 @@
+.todo-list-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+}
+
+.tasks-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4rem);
+  margin: 0 2rem;
+
+  ul{
+    list-style: none;
+  }
+}
+
+.add-task{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  button{
+    height: 3rem;
+    width: 7rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0 2rem 2rem 0;
+    border: 2px solid blue;
+    &:focus{
+      outline: none;
+    }
+  }
+  input{
+    height: 2.65rem;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 2rem 0 0 2rem;
+    border: 2px solid blue;
+    font-size: 1.8rem;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div>
+  <span *ngIf="user; else login">
+    Hi {{ user.firstName }} {{ user.lastName }}
+  </span>
+  <ng-template #login>
+    <button (click)="logIn()">LOGIN</button>
+  </ng-template>
+</div>
+<div>
+  <label for="firstName">Change the first name :</label>
+  <input id="firstName" type="text" [(ngModel)]="newFirstName">
+  <button (click)="modifyUser()">Modify!</button>
+</div>

@@ -4,14 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
-import { SpeakerComponent } from './speaker/speaker.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
+import { SingleNewsComponent } from './single-news/single-news.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SpeakerComponent,
-    HeaderComponent
+    HomeComponent,
+    NewsComponent,
+    SingleNewsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

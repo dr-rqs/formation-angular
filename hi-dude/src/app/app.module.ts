@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
-import { FootballClubComponent } from './football-club/football-club.component';
+import { SpeakerComponent } from './speaker/speaker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FootballClubComponent
+    SpeakerComponent
   ],
   imports: [
     BrowserModule,
